@@ -29,13 +29,17 @@
 		
 		private function init(e:Event = null):void 
 		{
+			graphics.beginFill(0x408080);
+			graphics.drawRect( -5, -5, 270, 170);
+			graphics.endFill();
+			
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
 			// create minimalcomps display components.  http://www.minimalcomps.com/
 			_outputWindow = new Window(this, 60, 20, 'Pause Timer');
 			_outputWindow.width = 125;
-			_indicatorLightTimerTick = new IndicatorLight(_outputWindow, 15, 35, 0x00FF00, ' timer tick 1 sec');
+			_indicatorLightTimerTick = new IndicatorLight(_outputWindow, 15, 35, 0xFB007D, ' timer tick 1 sec');
 			
 			// this minimalcomps button will trigger the pause.
 			_buttonPauseTimer = new PushButton(_outputWindow, 10, 65, 'Pause Timer', onButtonPress);

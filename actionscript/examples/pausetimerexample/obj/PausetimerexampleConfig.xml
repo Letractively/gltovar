@@ -28,7 +28,7 @@
   <file-specs>
     <path-element>Z:\Workspace\gltovar\actionscript\examples\pausetimerexample\src\Main.as</path-element>
   </file-specs>
-  <default-background-color>#408080</default-background-color>
+  <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>
   <default-size>
     <width>250</width>
