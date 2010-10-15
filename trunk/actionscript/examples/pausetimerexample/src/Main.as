@@ -8,7 +8,7 @@
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
-	import louistovar.pausetimer.PauseTimer;
+	import com.gltovar.pausetimer.PauseTimer;
 	
 	/**
 	 * Quick demo of the pause timer in use.
@@ -39,7 +39,7 @@
 			// create minimalcomps display components.  http://www.minimalcomps.com/
 			_outputWindow = new Window(this, 60, 20, 'Pause Timer');
 			_outputWindow.width = 125;
-			_indicatorLightTimerTick = new IndicatorLight(_outputWindow, 15, 35, 0xFB007D, ' timer tick 1 sec');
+			_indicatorLightTimerTick = new IndicatorLight(_outputWindow, 15, 35, 0xFB007D	, ' timer tick 1 sec');
 			
 			// this minimalcomps button will trigger the pause.
 			_buttonPauseTimer = new PushButton(_outputWindow, 10, 65, 'Pause Timer', onButtonPress);
