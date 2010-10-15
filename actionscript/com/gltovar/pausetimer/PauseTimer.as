@@ -79,12 +79,18 @@ package  com.gltovar.pausetimer
 			_lastTime = getTimer();
 		}
 		
-		/// Starts the timer, if it is not already running.
+		/// Starts the timer, if it is not already running. If paused will just call resume.
 		override public function start():void 
 		{
-			_paused = false;
-			_lastTime = getTimer();
-			super.start();
+			if (_paused)
+			{
+				resume();
+			}
+			else
+			{
+				_lastTime = getTimer();
+				super.start();
+			}			
 		}
 		
 		// need to note keep track of the user set dealy
