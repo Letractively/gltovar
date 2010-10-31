@@ -65,7 +65,6 @@ public class TapControl : MonoBehaviour
 			
 			if( character.isGrounded && jumpButton.HitTest( touch.position ) )
 			{
-				print("Should be jumping!");
 				velocity = character.velocity;
 				velocity.y = jumpSpeed;
 			}
