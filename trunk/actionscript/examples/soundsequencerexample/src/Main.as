@@ -15,9 +15,13 @@ package
 	 * library requirements for example:
 	 * Minimal Comps:  http://www.minimalcomps.com/
 	 * Sound Manager: http://evolve.reintroducing.com/2008/07/15/as3/as3-soundmanager/
+	 * Pause Timer: http://code.google.com/p/gltovar/source/browse/#svn/trunk/actionscript/codeandsnippets/com/gltovar/pausetimer
+	 * Sound Sequencer: http://code.google.com/p/gltovar/source/browse/#svn/trunk/actionscript/codeandsnippets/com/gltovar/soundsequence
 	 * 
 	 * 
 	 * This example shows of the use of sound sequencer.
+	 * 
+	 * Read more here: http://gltovar.com/blog/?p=173
 	 * 
 	 * @author Louis Tovar http://www.gltovar.com/blog
 	 */
