@@ -58,12 +58,12 @@ package com.gltovar.soundsequence
 	 * method #1:
 	 * var soundSequence:SoundSequence = new SoundSequence('sound1', 'sound2', 5000, 'sound3'); 
 	 * 
-	 * method #3:
+	 * method #2:
 	 * var soundArray:Array = ['sound1', 'sound2', 5000, 'sound3']
 	 * var soundSequence:SoundSequence = new SoundSequence();
 	 * soundSequence.sequenceFromArray( soundArray );
 	 * 
-	 * method #2:
+	 * method #3:
 	 * var soundSequence:SoundSequence = new SoundSequence();
 	 * soundSequence.addSound('sound1');
 	 * soundSequence.addSound('sound2');
@@ -71,7 +71,13 @@ package com.gltovar.soundsequence
 	 * soundSequence.addSound('sound3');
 	 * 
 	 * ALL METHODS START THE SEQUENCE:
-	 * soundSequence.start() // will play SoundManager's 'sound1' ID-ed sound1, then sound2, then 5 second gap, then sound3
+	 * soundSequence.playSequence() // will play SoundManager's 'sound1' ID-ed sound1, then sound2, then 5 second gap, then sound3
+	 * 
+	 * soundSequence.stopSequence() // will stop the sound sequence
+	 * 
+	 * soundSequence.pauseSequence() // pauses
+	 * 
+	 * soundSequence.resumeSequence() // resumes
 	 * 
 	 * soundSequence.addEventListener(Event.COMPLETE, onSoundSequenceComplete) // if you want to know when it is finished playing.
 	 * 
