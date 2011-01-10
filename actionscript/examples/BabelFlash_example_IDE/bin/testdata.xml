@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<fonts>
+		<externalfont>
+			<fontname>BlargFont</fontname>
+			<content>blarg.swf</content>
+		</externalfont>
+	</fonts>
+	<locale>
+		<language>en</language>
+		<textasset>
+			<id>text_test</id>
+			<content>Hello</content>
+			<font>_sans</font>
+			<size>24</size>
+		</textasset>
+		<graphicasset>
+			<id>graphic_test</id>
+			<content>apple_pie.jpg</content>
+		</graphicasset>
+	</locale>
+	<locale>
+		<language>sp</language>
+		<textasset>
+			<id>text_test</id>
+			<content>Hola</content>
+			<font>MetaPlusBold-Roman</font>
+			<size>18</size>
+		</textasset>
+		<graphicasset>
+			<id>graphic_test</id>
+			<content>taco.jpg</content>
+			<x>-100</x>
+		</graphicasset>
+	</locale>
+</data>
