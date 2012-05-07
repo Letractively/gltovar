@@ -92,9 +92,15 @@ package  com.gltovar.pausetimer
 			}			
 		}
 		
-		// need to note keep track of the user set dealy
-		
-		override public function get delay():Number { return super.delay; }
+    /**
+    * if you need the standard timer delay. if paused it will not reflect standard delay time
+    * use this.delay to get the standard amount of delay time.
+    */
+    public function get superTimerDelay():Number { return super.delay; }  
+      
+		// need to note keep track of the user set dealy  
+      
+		override public function get delay():Number { return _normalTimerDelay; }
 		override public function set delay(value:Number):void 
 		{
 			_lastTime = getTimer();
